@@ -1,0 +1,16 @@
+trait_bio = {
+	cost = 0
+	initial = yes
+	randomized = no
+	improves_leaders = yes
+	advanced_trait = yes
+	allowed_archetypes = {
+		BIOLOGICAL
+	}
+	icon = "gfx/interface/icons/traits/trait_conformists.dds"
+	potential_crossbreeding_chance = 1.5
+	modifier = {
+		planet_food_boost = 0.5
+		planet_jobs_food_produces_mult = 0.5
+	}
+}

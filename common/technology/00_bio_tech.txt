@@ -1,0 +1,92 @@
+tech_f2m_extract = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { materials }
+	weight = @tier1weight1
+
+	potential = {
+		has_origin = origin_bio_sea
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_origin = origin_bio_sea
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				is_species_class = PLANT
+			}
+		}
+	}
+}
+
+tech_scaly_armor = {
+	cost = @tier1cost2
+	area = engineering
+	tier = 1
+	category = { materials }
+	weight = @tier1weight2
+	prerequisites = { "tech_ship_armor_1" }
+	potential = {
+		has_origin = origin_bio_sea
+	}
+	gateway = infrastructure
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_origin = origin_bio_sea
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				is_species_class = PLANT
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_cuticle_armor = {
+	area = engineering
+	cost = @tier2cost2
+	tier = 2
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_ship_armor_2" }
+	weight = @tier2weight2
+
+	gateway = infrastructure
+
+	weight_modifier = {
+		modifier = {
+			factor = 2
+			has_origin = origin_bio_sea
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				is_species_class = PLANT
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

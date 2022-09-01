@@ -1,0 +1,44 @@
+building_food_to_minerals = {
+	base_buildtime = 360 #基础建造时间，单位为天
+	# capital = yes #是否是首都建筑
+	# can_build = no #是否可修建
+	# can_demolish = no #是否可被拆除
+	# can_be_ruined = no #能否被废弃
+	# can_be_disabled = no #能否被停止运作
+	#icon = xxx #图标文件名称，默认情况下和 ID 一样。贴图目录在 gfx\interface\icons\buildings
+	category = manufacturing #分类，可以让玩家更好的找到该建筑
+	potential = { #限制，没有满足这些条件则该建筑在可建造列表之中不可见，优先度高于 allow 语句
+		owner = {has_origin = origin_bio_sea}
+	}
+	allow = { #允许，满足下列条件，则该建筑可以被允许建造
+		has_upgraded_capital = yes
+	}
+	resources = { #资源相关
+		category = planet_buildings #类型
+		cost = { #一次性花费
+			minerals = 100
+			food = 300
+		}
+		upkeep = { #维持，为每月多少
+			energy = 2
+		}
+	}
+	prerequisites = { "tech_f2m_extract" }
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		modifier = { 
+			job_bio_f2m_job_add = 2
+		}
+	}
+	triggered_planet_modifier = { #条件触发的修正器
+		potential = { 
+			exists = owner
+			owner = { is_hive_empire = yes } #是蜂群帝国
+		}
+		modifier = {
+			job_bio_f2m_drone_add = 2
+		}
+		}
+}

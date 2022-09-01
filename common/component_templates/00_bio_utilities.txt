@@ -1,0 +1,143 @@
+utility_component_template = {
+	key = "SMALL_SCALY_ARMOR"
+	size = small
+	icon = "GFX_ship_part_armor_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_2S
+	}
+
+	prerequisites = { "tech_scaly_armor" }
+	component_set = "SCALY_ARMOR"
+	upgrades_to = "SMALL_CUTICLE_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 100
+		}
+		upkeep = {
+			food = 0.2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SCALY_ARMOR"
+	size = medium
+	icon = "GFX_ship_part_armor_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_2M
+	}
+
+	prerequisites = { "tech_scaly_armor" }
+	component_set = "SCALY_ARMOR"
+	upgrades_to = "MEDIUM_CUTICLE_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 150
+		}
+		upkeep = {
+			food = 0.4
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SCALY_ARMOR"
+	size = large
+	icon = "GFX_ship_part_armor_1"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_2L
+	}
+
+	prerequisites = { "tech_scaly_armor" }
+	component_set = "SCALY_ARMOR"
+	upgrades_to = "LARGE_CUTICLE_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 200
+		}
+		upkeep = {
+			food = 0.8
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SMALL_CUTICLE_ARMOR"
+	size = small
+	icon = "GFX_ship_part_armor_3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_3S
+	}
+
+	prerequisites = { "tech_cuticle_armor" }
+	component_set = "CUTICLE_ARMOR"
+	upgrades_to = "SMALL_ARMOR_4"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 150
+		}
+		upkeep = {
+			food = 0.5
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_CUTICLE_ARMOR"
+	size = medium
+	icon = "GFX_ship_part_armor_3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_3M
+	}
+
+	prerequisites = { "tech_cuticle_armor" }
+	component_set = "CUTICLE_ARMOR"
+	upgrades_to = "MEDIUM_ARMOR_4"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 200
+		}
+		upkeep = {
+			food = 0.6
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_CUTICLE_ARMOR"
+	size = large
+	icon = "GFX_ship_part_armor_3"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_3L
+	}
+
+	prerequisites = { "tech_cuticle_armor" }
+	component_set = "CUTICLE_ARMOR"
+	upgrades_to = "LARGE_ARMOR_4"
+	resources = {
+		category = ship_components
+		cost = {
+			food = 250
+		}
+		upkeep = {
+			food = 1
+		}
+	}
+}

@@ -1,0 +1,5 @@
+pm_bio_sea = {
+	spawn_chance = {}
+
+	modifier = "bio_sea"
+}

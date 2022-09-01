@@ -1,0 +1,29 @@
+origin_bio_sea = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_birthed_by_calamity.dds"
+	picture = GFX_origin_bio_sea
+
+	starting_colony = pc_ocean
+	habitability_preference = pc_ocean
+
+	# playable = {
+	# 	is_species_class = PLANT
+	# }
+	possible = {
+		authority = {
+			NOT = {
+				value = auth_machine_intelligence
+			}
+		}
+	}
+
+	description = "civic_tooltip_BioSea_effects"
+
+	traits = {
+		trait = trait_bio
+	}
+
+	random_weight = {
+		base = 5
+	}
+}

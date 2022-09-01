@@ -1,0 +1,9 @@
+bio_sea = {
+	pop_environment_tolerance = 0.05
+	planet_jobs_food_produces_mult = 0.50
+	district_farming_max = 5
+	district_mining_max = -6
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_microscopic_life.dds"
+	icon_frame = 1
+}

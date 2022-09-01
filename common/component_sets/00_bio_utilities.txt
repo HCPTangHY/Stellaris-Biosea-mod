@@ -1,0 +1,13 @@
+component_set = {
+	key = "SCALY_ARMOR"
+
+	icon = "GFX_ship_part_armor_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "CUTICLE_ARMOR"
+
+	icon = "GFX_ship_part_armor_2"
+	icon_frame = 1
+}

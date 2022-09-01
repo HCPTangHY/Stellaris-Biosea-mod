@@ -1,0 +1,81 @@
+tech_ship_armor_2 = {
+	area = engineering
+	cost = @tier1cost2
+	tier = 1
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_ship_armor_1" }
+	weight = @tier1weight2
+
+	gateway = infrastructure
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = bulwark }
+		}
+		modifier = {
+			factor = 0
+			has_origin = origin_bio_sea
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+tech_ship_armor_3 = {
+	area = engineering
+	cost = @tier2cost2
+	tier = 2
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_ship_armor_2" }
+	weight = @tier2weight2
+
+	gateway = infrastructure
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = bulwark }
+		}
+		modifier = {
+			factor = 0
+			has_origin = origin_bio_sea
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
